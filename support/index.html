@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick Transcribe Support</title><style>
+:root { color-scheme: light dark; --accent: #0039CA; }
+@media (prefers-color-scheme: dark) { :root { --accent: #7a8eff; } }
+body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+         max-width: 720px; margin: 0 auto; padding: 16px 20px 0; font-size: 15px; }
+header a.brand { font-weight: 600; text-decoration: none; color: inherit; }
+a { color: var(--accent); }
+h1 { font-size: 30px; line-height: 1.2; } h2 { font-size: 21px; margin-top: 2em; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid color-mix(in srgb, currentColor 20%, transparent); padding: 8px; vertical-align: top; text-align: left; }
+code { font-size: 0.9em; }
+</style></head>
+<body><header><a class="brand" href="/quick-transcribe-legal/">Quick Transcribe</a>
+<a href="/quick-transcribe-legal/sl/support/" hreflang="sl">Slovenščina</a></header>
+<main><h1>Quick Transcribe Support</h1>
+<p><strong>Publisher:</strong> Zan Cimperman<br><strong>Support email:</strong> cimperman.work@gmail.com<br><strong>Privacy requests:</strong> cimperman.work@gmail.com<br></p>
+<p>Quick Transcribe turns speech into editable text in the iPhone app, Messages, and Shortcuts. Contact us at the support email above for help or to report a problem. </p>
+<h2>Recording and transcription</h2>
+<ul><li><strong>No microphone access:</strong> allow Quick Transcribe in iPhone Settings → Privacy &amp; Security → Microphone.</li><li><strong>Groq errors:</strong> check the saved API key, connection, and your Groq account’s limits and billing. The main app may retain a failed recording for Retry. A successful retry or starting a new recording removes the previous pending recording. Clearing the transcript alone does not remove that recording. Messages and audio-file Shortcuts clean up their temporary recording after a transcription attempt, including failure.</li><li><strong>On-device transcription:</strong> download the selected model in Settings → On-device model while online. After the download, and once after each iOS update, the model is optimized for your iPhone; this can take a minute. Once downloaded, transcription runs on the device. Download time and available storage depend on the model. You can delete downloaded models in the same screen.</li><li><strong>Choosing an engine:</strong> Automatic uses Groq when a key is saved and you have allowed uploads, and On-device otherwise. If Groq is rate-limited or unreachable and a model is downloaded, Automatic transcribes on the device instead. Select On-device to keep audio on your iPhone at all times.</li><li><strong>Wrong words:</strong> check the language, reduce background noise, and review custom vocabulary and cleanup settings. Always review important details before relying on a transcript.</li></ul>
+<h2>Messages</h2>
+<p>Open Quick Transcribe from the Messages app’s app menu and allow microphone access. In Quick Transcribe Settings, choose the delivery mode you want: </p>
+<ul><li><strong>Preview first:</strong> record, stop, review and edit the text, tap Insert, then tap Send in Messages.</li><li><strong>Insert automatically:</strong> the transcript goes into the compose field; tap Send in Messages when ready.</li><li><strong>Send automatically:</strong> the extension attempts to send the transcript immediately after transcription, without a separate review step. Select Preview first if you want to check text before delivery. iOS may reject an automatic-send attempt; review the extension’s status and retained transcript before trying again.</li></ul>
+<h2>Local data and privacy</h2>
+<p>Clear the latest transcript in the editor. Remove vocabulary entries in Settings → Vocabulary, or the Groq API key in Settings → Cloud (Groq). Removing the key from the app does not revoke it at Groq; use your Groq account to revoke it. Clear diagnostic logs under Settings → Advanced → Diagnostics. Copies pasted, shared, or sent to other apps or people are controlled by those destinations. </p>
+<p>Read the <a href="/quick-transcribe-legal/privacy/">Privacy Policy</a> and <a href="/quick-transcribe-legal/terms/">Terms of Use</a> for processing, retention, and service details. </p>
+<h2>Reporting a problem</h2>
+<p>Email <strong>cimperman.work@gmail.com</strong> with the app version, iOS version, iPhone model, selected engine, language, and a short description of what happened. If the problem concerns local transcription, include the selected model name. </p>
+<p>Diagnostics are optional. Open Settings → Advanced → Diagnostics to inspect, share, or clear the local log. Review it before sending: it includes technical events and error messages, and errors can contain personal information. Remove information you do not want to share. Never send an API key, private conversation, or recording unless it is necessary and you intend to disclose it. A description using a harmless sample recording is usually enough to begin investigating. </p></main></body></html>
